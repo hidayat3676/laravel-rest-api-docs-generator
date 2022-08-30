@@ -1,0 +1,36 @@
+{
+    "name": "hidayat/api-docs",
+    "description": "This package provide Documentation for rest API",
+    "keywords": [
+        "laravel rest api documentation",
+        "laravel rest api doc genrator", "res api docs",
+        "Laravel rest api docomentation provider"
+    ],
+    "authors": [
+        {
+            "name": "hidayat ullah",
+            "email": "hidayat3676@gmail.com",
+            "homepage": "https://vonlinesupport.com",
+            "role": "Developer"
+        }
+    ],
+    "type": "library",
+    "require": {
+        "php": ">=7.0",
+        "ext-json": "*"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Hidayat\\ApiDocs\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Hidayat\\ApiDocs\\RestApiDocServiceProvider"
+            ]
+        }
+    }
+}

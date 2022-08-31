@@ -19,7 +19,7 @@
     </thead>
     <tbody>
     @php $i = 0; @endphp
-    @foreach ($routes as  $route )
+    @foreach ( \Illuminate\Support\Facades\Route::getRoutes() as  $route )
         @if($route->getPrefix() == 'api' || $route->getPrefix() == 'api/')
             @php $prefix = trim($route->getPrefix(), "/"); @endphp
             <tr>

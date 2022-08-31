@@ -9,5 +9,9 @@ for api's in laravel
 <small>Once install publish package using </small>
 <br>
 <code>
-php artisan vendor:publish --provider=""
+php artisan vendor:publish --provider="Hidayat\ApiDocs\RestApiDocServiceProvider"
 </code> 
+- once published you will a config file in the `config/` directory
+named api_docs which will have a sample of an endpoint documentation
+for on one api you use that sample adds your other endpoints
+- 

@@ -63,6 +63,7 @@
                         @endphp
                         @if($success)
                             <div class="alert alert-success">
+                                <b><u>Successes</u></b>
                                 <ul>
                                     @foreach($success as $value => $description)
                                         <li><b>{{ $value }} </b> : {{ is_array($description) || is_object($description) ? json_encode($description) : $description }}</li>
@@ -72,6 +73,7 @@
                         @endif
                         @if($errors)
                             <div class="alert alert-danger">
+                                <b><u>Errors</u></b>
                                 <ul>
                                     @foreach($errors as $value => $description)
                                         <li><b>{{ $value }} </b> : {{ is_array($description) || is_object($description) ? json_encode($description) : $description  }}</li>

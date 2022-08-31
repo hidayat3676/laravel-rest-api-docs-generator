@@ -11,10 +11,11 @@ for api's in laravel
 <code>
 php artisan vendor:publish --provider="Hidayat\ApiDocs\RestApiDocServiceProvider"
 </code> 
-- once published you will a config file in the `config/` directory
+- once published you will have a config file in the `config/` directory
 named api_docs which will have a sample of an endpoint documentation
 for  one api you can use that sample to adds your other endpoints
-- next paste the following code in your routes/web.php 
+- next paste the following code in your routes/web.php
+- you can place it anywhere in other routes files as well as long as that file is loaded into your views. 
 - <code>\Hidayat\ApiDocs\ApiDocsRoute::generateRoute();</code>
 - This will create a route url  `api_docs` visit this url and you 
 - see the docs view.
@@ -25,3 +26,5 @@ you can do customization as you want in there.
   `\Hidayat\ApiDocs\ApiDocsRoute::generateRoute('custom-url');`
 which will be used as the url for the showing the docs instead of 
 the default one.
+- The style used by the view is also published to `public/vendor/api_docs`
+folder you can change styling as you want.

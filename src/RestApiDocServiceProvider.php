@@ -26,6 +26,9 @@ class RestApiDocServiceProvider extends ServiceProvider
     {
         $this->loadViewsFrom(__DIR__ . '/../views', 'api_docs');
 
+        $this->mergeConfigFrom(
+            __DIR__ . '/../config/api_docs.php', 'api_docs'
+        );
 
         $this->publishes([
             __DIR__ . '/../config/api_docs.php' => config_path('api_docs.php'),

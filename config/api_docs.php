@@ -11,7 +11,7 @@ return [
     'baseUrl' => 'localhost',
     'home' => [
         'params' => [
-            'id' => 'required flyer id in url param'
+            'name' => 'Some description'
         ],
         'headers' => [
             'key' => 'description'

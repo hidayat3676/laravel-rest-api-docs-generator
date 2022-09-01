@@ -28,5 +28,5 @@ which will be used as the url for the showing the docs instead of
 the default one.
 - The style used by the view is also published to `public/vendor/api_docs`
 folder you can change styling as you want.
-- <b>Note: <b> This package scan all routes with prefix `api`
+- <b>Note: </b> This package scan all routes with prefix `api`
 other routes remain untouched.

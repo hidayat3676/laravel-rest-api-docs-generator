@@ -9,6 +9,7 @@
 return [
     //specify base url
     'baseUrl' => 'localhost',
+    //assume a route 'api/home' don't need to add the prefix  i.e 'api' here
     'home' => [
         'params' => [
             'name' => 'Some description'

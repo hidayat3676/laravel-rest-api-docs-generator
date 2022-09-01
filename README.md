@@ -18,7 +18,7 @@ for  one api you can use that sample to adds your other endpoints
 - you can place it anywhere in other routes files as well as long as that file is loaded into your views. 
 - <code>\Hidayat\ApiDocs\ApiDocsRoute::generateRoute();</code>
 - This will create a route url  `api_docs` visit this url and you 
-- see the docs view.
+will see the docs view.
 - Once you run the publish command the view which is used by the package
 is also published to `resources/views/vendor/api_docs` folder
 you can do customization as you want in there.

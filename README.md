@@ -15,7 +15,7 @@ php artisan vendor:publish --provider="Hidayat\ApiDocs\RestApiDocServiceProvider
 named api_docs which will have a sample of an endpoint documentation
 for  one api you can use that sample to adds your other endpoints
 - next paste the following code in your routes/web.php
-- you can place it anywhere in other routes files as well as long as that file is loaded into your views. 
+- you can place it anywhere in other routes files as well as long as that file is loaded into your routes. 
 - <code>\Hidayat\ApiDocs\ApiDocsRoute::generateRoute();</code>
 - This will create a route url  `api_docs` visit this url and you 
 will see the docs view.
